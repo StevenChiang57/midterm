@@ -76,7 +76,7 @@ double square_area(square* sq){ // TODO
 }
 //CPSC 223C—Midterm Exam (Coding section – submit code from C file to your github portfolio) page 1 of 2
 double square_perimeter(square* r){ // TODO
-  return (sq->side * 4);
+  return (r->side * 4);
 }
 // print location, side, area and perimeter
 void square_print(const char* msg, square* sq){ // TODO
