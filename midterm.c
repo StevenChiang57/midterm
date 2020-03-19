@@ -5,7 +5,7 @@
 void count() {
  printf("Enter lines of text here: ...\n");
  int c, nc = 0, nt = 0, nbackslash = 0, nl = 0;
- while ((c = fgetc(stderr)) != EOF) {
+ while ((c = fgetc(fin)) != EOF) {
  if (c == '\n') { ++nl;
  } else if (c == '\t') { ++nt;
  } else if (c == '\\') { ++nbackslash;
