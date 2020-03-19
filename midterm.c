@@ -9,7 +9,7 @@ void count() {
  if (c == '\n') { ++nl;
  } else if (c == '\t') { ++nt;
  } else if (c == '\\') { ++nbackslash;
- } else if (isalphanum(c)) { ++nc; }
+ } else if (isalnum(c)) { ++nc; }
  printf("lines: %d\n", nl);
  printf("tabs: %d\n", nt);
  printf("backslashes: %d\n", nbackslash);
