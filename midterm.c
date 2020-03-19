@@ -72,11 +72,13 @@ void square_expandby(square* sq, double expandby){ // TODO
   sq->ul.side *= expandby;
 }
 double square_area(square* sq){ // TODO
-  return pow(sq->side, 2);
+  double area = pow(sq->side, 2);
+  return area;
 }
 //CPSC 223C—Midterm Exam (Coding section – submit code from C file to your github portfolio) page 1 of 2
 double square_perimeter(square* r){ // TODO
-  return (r->side * 4);
+  double perimeter = (r->side * 4);
+  return perimeter;
 }
 // print location, side, area and perimeter
 void square_print(const char* msg, square* sq){ // TODO
