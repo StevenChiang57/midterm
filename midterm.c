@@ -80,6 +80,7 @@ double square_perimeter(square* r){ // TODO
 }
 // print location, side, area and perimeter
 void square_print(const char* msg, square* sq){ // TODO
+  printf("%s\n", msg);
   printf("Location: (%.1f, %.1f)\n", sq->ul.x , sq->ul.y);
   printf("Side: %s\n", sq->size);
   printf("Area: %f\n", square_area(sq));
