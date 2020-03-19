@@ -23,7 +23,7 @@ int main(int argc, const char* argv[]) {
 // (3 pts) (2) Find the first character c in a const char* s: const char* strchr(const char* s, char c);
 // (3 pts) (3) Find the length of the prefix of const char* s that has characters in const char* t: size_t strspn(const char* s, const char* t);
 // (3 pts) (4) Terminate a program immediately: exit(1);
-// (3 pts) (5) Open the file “midterm.txt” in read mode: fopen(“midterm.txt”, "r");
+// (3 pts) (5) Open the file “midterm.txt” in read mode: fopen("midterm.txt", "r");
 // Using pointers, implement each of the following C standard library functions
 char* strcpy(char* s, const char* t){ // (4 pts) (6)
   char* p = s;
@@ -40,10 +40,11 @@ char* strncat(char* s, const char* t, size_t n){ // (4 pts) (7)
   return p;
 }
 int strcmp(const char* s, const char* t){ // (4 pts) (8)
-  char* p = s;
-  while (*s != '\0') { ++s; }
-  while ((*s++ = *t++) != '\0') { }
-  return p;
+  while (n-- > 1 && *s != '\0' && *t != '\0' && *s == *t) {
+    ++s;
+    ++t;
+  }
+  return *s - *t;
 }
 // PART III: SHORT PROGRAM
 (20 pts) (9) Fill in the program code below for the square ADT (abstract data type)
