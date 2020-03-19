@@ -40,7 +40,7 @@ char* strncat(char* s, const char* t, size_t n){ // (4 pts) (7)
   return p;
 }
 int strcmp(const char* s, const char* t){ // (4 pts) (8)
-  while (n-- > 1 && *s != '\0' && *t != '\0' && *s == *t) {
+  while (*s != '\0' && *t != '\0' && *s == *t) {
     ++s;
     ++t;
   }
