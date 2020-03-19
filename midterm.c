@@ -65,8 +65,8 @@ void square_delete(square* sq){ // TODO
   free(sq);
 }
 void square_move(square* sq, double x, double y){ // TODO
-  sq->ul.x = ulx;
-  sq->ul.y = uyx;
+  sq->ul.x = x;
+  sq->ul.y = y;
 }
 void square_expandby(square* sq, double expandby){ // TODO
   sq->ul.side *= expandby;
